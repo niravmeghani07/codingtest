@@ -1,0 +1,104 @@
+*{
+			box-sizing: border-box;
+		}
+		
+		h1{
+			text-align: center;
+			font-family: "Lucida Console", Courier, monospace;
+		}
+
+		#ni,#ra,#v{
+			background-color: gray;
+			width:30%;
+			border:2px solid black;
+			margin-right: 10px;
+			margin-left: 15px;
+			margin-bottom: 10px;
+			float: left;	
+		}
+		p.lo,p.be,p.su{
+			padding: 7px;
+			margin: 0px;
+			font-style:bold;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+		}
+		
+		
+		#chick,#beef,#sushi{
+               
+                margin:0px;
+                border-right:0px;
+                border-bottom: 2px solid black;
+                border-top:0px;
+                border-left:2px solid black;
+                width:40%;
+                padding:5px 5px 5px 5px;
+                font-size:22px;
+               position: relative;
+               top:1px;
+               left:60%;               
+               text-align: center;
+               font-weight: bold;
+               font-family: sans-serif;
+               
+             }
+             #chick{
+             	 background-color: #ff99ff;
+             }
+             #beef{
+             	background-color: #ee2b2b;
+             	color:white;
+             }
+ 
+             #sushi{
+             	background-color: #d1ad48;
+             }
+
+           .row{
+           	width: 100%
+           }
+
+           @media (min-width:992px){
+           .col-log-3{
+           		float: left;
+           	}
+           	
+           	.col-lg-3{width: 25%;}
+           	
+           }
+
+           @media (min-width:768px) and (max-width: 991px){
+           
+           	#ni,#ra{
+           		width:45%;
+           		float: left;
+           	}
+           	
+              	#v{
+           		width: 92.9%;
+           		clear: both;
+           	}
+              	#chick,#beef{
+              		width: 45%;
+              		left: 55%;
+            		
+                	}
+               #sushi{
+            	width:20%;
+           	    left:80%;
+               }
+           }
+
+           	@media(max-width: 767px)
+           	{
+               #ni,#ra,#v{
+               	width:95%; 
+               	
+               }
+
+               #chick,#beef,#sushi{
+
+               	   width:35%;
+               	   left:65%;
+               }
+           	}
